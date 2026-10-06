@@ -73,7 +73,4 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} #OPTIONAL
 
       - name: "Example show SonarQube Quality Gate Status value"
-        run: echo "The Quality Gate status is ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}"    
-
-      - name: Build
-        run: mvn package     
+        run: echo "The Quality Gate status is ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}" 
